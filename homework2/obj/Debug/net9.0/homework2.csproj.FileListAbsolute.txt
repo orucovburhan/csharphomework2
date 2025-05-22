@@ -12,3 +12,4 @@
 /Users/burhanorucov/C#/homework2/obj/Debug/net9.0/homework2.pdb
 /Users/burhanorucov/C#/homework2/obj/Debug/net9.0/homework2.genruntimeconfig.cache
 /Users/burhanorucov/C#/homework2/obj/Debug/net9.0/ref/homework2.dll
+/Users/burhanorucov/C#/homework2/obj/Debug/net9.0/homework2.sourcelink.json

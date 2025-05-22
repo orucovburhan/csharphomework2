@@ -29,9 +29,7 @@ namespace MyApp
             string[] correct_answers = new string[] { "1918", "1918", "1991", "1992", "2020", "1914", "1945", "2005", "1923", "1991" };
             string[] repeated = new string[10];
             string[] wrong_answers = new string[10];
-
             int point = 0;
-            
             int totalPoint = 0;
             Random rand = new Random();
             Random rand2 = new Random();
@@ -40,9 +38,7 @@ namespace MyApp
                 Console.Clear();
                 System.Console.WriteLine($"Total point: {totalPoint}");
                 System.Console.WriteLine($"{i + 1}th question: ");
-
                 int random_question = rand.Next(0, 10);
-
                 for (int j = 0; j < 2; j++)
                 {
                     if (repeated.Contains(questions[random_question]))
@@ -55,12 +51,10 @@ namespace MyApp
 
                 }
                 repeated[i] = questions[random_question];
-
                 string A;
                 string B;
                 string C;
                 int random_answer1 = rand.Next(random_question * 3, (random_question * 3) + 3);
-
                 System.Console.WriteLine(questions[random_question]);
                 System.Console.WriteLine($"A){answers[random_answer1]}");
                 A = answers[random_answer1];
@@ -96,7 +90,6 @@ namespace MyApp
                     System.Console.WriteLine($"{i + 1}th question: ");
                     System.Console.WriteLine(questions[random_question]);
                     System.Console.WriteLine($"A){answers[random_answer1]}");
-
                     if (random_answer1 > random_question * 3 + 1)
                     {
                         System.Console.WriteLine($"B){answers[random_answer1 - 1]}");
@@ -123,7 +116,6 @@ namespace MyApp
                     Thread.Sleep(milliseconds);
                     Console.ForegroundColor = ConsoleColor.White;
                 }
-
                 void WrongScreen()
                 {
                     if (totalPoint != 0)
@@ -164,8 +156,6 @@ namespace MyApp
                     Thread.Sleep(milliseconds);
                     Console.ForegroundColor = ConsoleColor.White;
                 }
-
-
                 System.Console.WriteLine("Enter your answer: ");
                 user_answer = Console.ReadLine();
                 if (user_answer == "a" || user_answer == "A")
@@ -221,7 +211,6 @@ namespace MyApp
                     System.Console.WriteLine("Wrong input!!!");
                     i--;
                 }
-
             }
             Console.Clear();
             System.Console.WriteLine("Exam ended...");
@@ -238,20 +227,6 @@ namespace MyApp
                     System.Console.WriteLine(wrong_answers[i]);
                 }
             }
-            
-            
-           
-
-
-
-
-            }
-            
-            
-            
-          
-
-            
+            }   
         }
-         
     }
